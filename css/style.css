@@ -1,0 +1,130 @@
+.body {
+  background-image: url(../assets/imagenes/fondoport.jpeg);
+  background-size: cover;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.body div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body div img {
+  margin-top: 25px;
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+}
+
+.body h1 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.body .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .botones div {
+  display: block;
+}
+
+.body .botones div a {
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+  width: 170px;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+  background-color: rgba(4, 4, 26, 0.473);
+}
+
+@media (min-width: 992px) {
+  .body div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body div img {
+    margin-top: 25px;
+    width: 340px;
+    height: 340px;
+    border-radius: 100%;
+  }
+  .body h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .body .botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body .botones div {
+    display: block;
+  }
+  .body .botones div a {
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    background-color: rgba(4, 4, 26, 0.473);
+  }
+  .body .botones div a:hover {
+    background-color: rgba(63, 63, 94, 0.322);
+  }
+}
+
+.datospersonales h3 {
+  font-size: 25px;
+  text-decoration: underline;
+  text-align: center;
+  margin: 10px;
+}
+
+.datospersonales h4 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.educacion h2 {
+  text-align: center;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.educacion h3 {
+  margin: 10px;
+  font-size: 22px;
+}
