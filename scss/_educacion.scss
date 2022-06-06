@@ -1,37 +1,32 @@
 .educacion{
-    min-height: 100vh;
     padding: 10px;
     h3{
         background-color: rgba(4, 4, 26, 0.356);
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
     }
     .coderhouse{
         h4{
-            width: 200px;
-            font-size: 28px;
+            font-size: 22px;
             background-color: rgba(4, 4, 26, 0.473);
         }
         .curso{
-            margin: 15px;
-            display: flex;
-            align-items: baseline;
+            margin: 10px;
             background-color: rgba(4, 4, 26, 0.473);
             border-radius: 10px;
             border: solid 1px rgba(255, 255, 255, 0.123);
             h5{
-                padding: 20px;
-                width: 320px;
-                font-size: 25px;
+                padding: 10px;
+                font-size: 22px;
             }
             p{
-                font-size: 22px;
-                padding: 20px;
+                font-size: 18px;
+                padding: 10px;
             }
         }
     }
     .botoneseducacion{
-        display: flex;
+        display: none;
         justify-content: center;
         margin: 30px;
         a{
@@ -56,3 +51,66 @@
         }
     }
 }
+
+
+@media(min-width:992px){
+    .educacion{
+        min-height: 100vh;
+        padding: 10px;
+        h3{
+            background-color: rgba(4, 4, 26, 0.356);
+            font-size: 30px;
+            text-align: center;
+        }
+        .coderhouse{
+            h4{
+                width: 200px;
+                font-size: 28px;
+                background-color: rgba(4, 4, 26, 0.473);
+            }
+            .curso{
+                margin: 15px;
+                display: flex;
+                align-items: baseline;
+                background-color: rgba(4, 4, 26, 0.473);
+                border-radius: 10px;
+                border: solid 1px rgba(255, 255, 255, 0.123);
+                h5{
+                    padding: 20px;
+                    width: 320px;
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 22px;
+                    padding: 20px;
+                }
+            }
+        }
+        .botoneseducacion{
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+            a{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 25px;
+                text-align: center;
+                border-radius: 10px;
+                margin: 10px;
+                width: 300px;
+                color: white;
+                padding: 5px;
+                text-decoration: none;
+                background-color: rgba(4, 4, 26, 0.473);
+                border: solid 1px rgba(255, 255, 255, 0.123);
+                cursor: pointer;
+                &:hover{
+                    background-color: rgba(63, 63, 94, 0.322) ;
+                }
+                &:active{
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}
+

@@ -12,10 +12,6 @@ p {
   color: white;
 }
 
-.body .inicio {
-  min-height: 100vh;
-}
-
 .body .inicio div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,19 +24,19 @@ p {
 .body .inicio div img {
   border: solid 1px rgba(255, 255, 255, 0.637);
   margin-top: 20px;
-  width: 300px;
-  height: 290px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
 }
 
 .body .inicio h1 {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
 .body .inicio h2 {
   text-align: center;
-  font-size: 28px;
+  font-size: 23px;
 }
 
 .body .inicio .botones {
@@ -58,7 +54,7 @@ p {
 
 .body .inicio .botones div a {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 25px;
+  font-size: 23px;
   text-align: center;
   border-radius: 10px;
   margin: 10px;
@@ -69,45 +65,109 @@ p {
   display: block;
   background-color: rgba(4, 4, 26, 0.473);
   border: solid 1px rgba(255, 255, 255, 0.123);
-  cursor: pointer;
 }
 
-.body .inicio .botones div a:hover {
-  background-color: rgba(63, 63, 94, 0.322);
-}
-
-.body .inicio .botones div a:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+@media (min-width: 992px) {
+  .body .inicio {
+    min-height: 100vh;
+  }
+  .body .inicio div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body .inicio div img {
+    border: solid 1px rgba(255, 255, 255, 0.637);
+    margin-top: 20px;
+    width: 300px;
+    height: 290px;
+    border-radius: 100%;
+  }
+  .body .inicio h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .body .inicio h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .body .inicio .botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body .inicio .botones div {
+    display: block;
+  }
+  .body .inicio .botones div a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    background-color: rgba(4, 4, 26, 0.473);
+    border: solid 1px rgba(255, 255, 255, 0.123);
+    cursor: pointer;
+  }
+  .body .inicio .botones div a:hover {
+    background-color: rgba(63, 63, 94, 0.322);
+  }
+  .body .inicio .botones div a:active {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
 }
 
 .datos {
-  min-height: 100vh;
   padding: 10px;
 }
 
 .datos h3 {
   background-color: rgba(4, 4, 26, 0.267);
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
-.datos .contenedor {
+.datos .vistacel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.datos .vistacel img {
+  width: 200px;
+  height: 190px;
+  border-radius: 100%;
+}
+
+.datos .contenedor {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .datos .contenedor div img {
-  width: 340px;
-  height: 340px;
+  display: none;
+  width: 200px;
+  height: 190px;
   border-radius: 100%;
 }
 
@@ -116,15 +176,16 @@ p {
 }
 
 .datos .contenedor .info h4 {
+  max-width: 400px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   background-color: rgba(4, 4, 26, 0.473);
 }
 
 .datos .botonesdatos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -155,51 +216,111 @@ p {
           transform: scale(0.9);
 }
 
+@media (min-width: 992px) {
+  .datos {
+    min-height: 100vh;
+    padding: 10px;
+  }
+  .datos h3 {
+    background-color: rgba(4, 4, 26, 0.267);
+    font-size: 30px;
+    text-align: center;
+  }
+  .datos .vistacel {
+    display: none;
+  }
+  .datos .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    align-items: center;
+  }
+  .datos .contenedor div img {
+    display: block;
+    width: 340px;
+    height: 340px;
+    border-radius: 100%;
+  }
+  .datos .contenedor .info {
+    display: block;
+  }
+  .datos .contenedor .info h4 {
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(4, 4, 26, 0.473);
+  }
+  .datos .botonesdatos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 30px;
+  }
+  .datos .botonesdatos a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    background-color: rgba(4, 4, 26, 0.473);
+    border: solid 1px rgba(255, 255, 255, 0.123);
+    cursor: pointer;
+  }
+  .datos .botonesdatos a:hover {
+    background-color: rgba(63, 63, 94, 0.322);
+  }
+  .datos .botonesdatos a:active {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
 .educacion {
-  min-height: 100vh;
   padding: 10px;
 }
 
 .educacion h3 {
   background-color: rgba(4, 4, 26, 0.356);
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
 .educacion .coderhouse h4 {
-  width: 200px;
-  font-size: 28px;
+  font-size: 22px;
   background-color: rgba(4, 4, 26, 0.473);
 }
 
 .educacion .coderhouse .curso {
-  margin: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  margin: 10px;
   background-color: rgba(4, 4, 26, 0.473);
   border-radius: 10px;
   border: solid 1px rgba(255, 255, 255, 0.123);
 }
 
 .educacion .coderhouse .curso h5 {
-  padding: 20px;
-  width: 320px;
-  font-size: 25px;
+  padding: 10px;
+  font-size: 22px;
 }
 
 .educacion .coderhouse .curso p {
-  font-size: 22px;
-  padding: 20px;
+  font-size: 18px;
+  padding: 10px;
 }
 
 .educacion .botoneseducacion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -230,31 +351,92 @@ p {
           transform: scale(0.9);
 }
 
+@media (min-width: 992px) {
+  .educacion {
+    min-height: 100vh;
+    padding: 10px;
+  }
+  .educacion h3 {
+    background-color: rgba(4, 4, 26, 0.356);
+    font-size: 30px;
+    text-align: center;
+  }
+  .educacion .coderhouse h4 {
+    width: 200px;
+    font-size: 28px;
+    background-color: rgba(4, 4, 26, 0.473);
+  }
+  .educacion .coderhouse .curso {
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    background-color: rgba(4, 4, 26, 0.473);
+    border-radius: 10px;
+    border: solid 1px rgba(255, 255, 255, 0.123);
+  }
+  .educacion .coderhouse .curso h5 {
+    padding: 20px;
+    width: 320px;
+    font-size: 25px;
+  }
+  .educacion .coderhouse .curso p {
+    font-size: 22px;
+    padding: 20px;
+  }
+  .educacion .botoneseducacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 30px;
+  }
+  .educacion .botoneseducacion a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    background-color: rgba(4, 4, 26, 0.473);
+    border: solid 1px rgba(255, 255, 255, 0.123);
+    cursor: pointer;
+  }
+  .educacion .botoneseducacion a:hover {
+    background-color: rgba(63, 63, 94, 0.322);
+  }
+  .educacion .botoneseducacion a:active {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
 .contacto {
-  min-height: 100vh;
   padding: 10px;
 }
 
 .contacto h3 {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   background-color: rgba(4, 4, 26, 0.212);
 }
 
 .contacto .contactame h4 {
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .contacto .contactame h4 a {
   text-decoration: none;
   color: white;
-}
-
-.contacto .contactame h4 a:hover {
-  color: #cf9f9f;
-  -webkit-transition: 3s;
-  transition: 3s;
 }
 
 .contacto form {
@@ -263,20 +445,20 @@ p {
 }
 
 .contacto form h5 {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .contacto form label {
   display: block;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .contacto form input {
   border-radius: 5px;
-  width: 200px;
-  height: 30px;
+  width: 150px;
+  height: 25px;
 }
 
 .contacto form textarea {
@@ -304,14 +486,79 @@ p {
   margin: 5px;
   width: 70px;
   height: 30px;
-  cursor: pointer;
 }
 
-.contacto .enviar button:hover {
-  background-color: rgba(182, 182, 207, 0.452);
-}
-
-.contacto .enviar button:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+@media (min-width: 992px) {
+  .contacto {
+    min-height: 100vh;
+    padding: 10px;
+  }
+  .contacto h3 {
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(4, 4, 26, 0.212);
+  }
+  .contacto .contactame h4 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .contacto .contactame h4 a {
+    text-decoration: none;
+    color: white;
+  }
+  .contacto .contactame h4 a:hover {
+    color: #cf9f9f;
+    -webkit-transition: 3s;
+    transition: 3s;
+  }
+  .contacto form {
+    text-align: center;
+    display: block;
+  }
+  .contacto form h5 {
+    font-size: 25px;
+  }
+  .contacto form label {
+    display: block;
+    color: white;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .contacto form input {
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+  }
+  .contacto form textarea {
+    border-radius: 10px;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+  }
+  .contacto .enviar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacto .enviar button {
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .contacto .enviar button:hover {
+    background-color: rgba(182, 182, 207, 0.452);
+  }
+  .contacto .enviar button:active {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
 }
