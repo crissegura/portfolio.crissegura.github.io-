@@ -1,0 +1,68 @@
+.contacto{
+    min-height: 100vh;
+    padding: 10px;
+    h3{
+        font-size: 30px;
+        text-align: center;
+        background-color: rgba(4, 4, 26, 0.212);
+    }
+    .contactame{
+        h4{
+        text-align: center;
+        font-size: 25px;
+        a{
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: rgb(207, 159, 159);
+                transition: 3s;
+            }
+        }
+        }
+    }
+    form{
+        text-align: center;
+        display: block;
+        h5{
+            font-size: 25px;
+        }
+        label{
+            display: block;
+            color: white;
+            font-size: 22px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        input{
+            border-radius: 5px;
+            width: 200px;
+            height: 30px;
+        }
+        textarea{
+            border-radius: 10px;
+            width: 300px;
+            min-width: 300px;
+            max-width: 300px;
+            height: 50px;
+            min-height: 50px;
+            max-height: 50px;
+        }
+    }
+    .enviar{
+        display: flex;
+        justify-content: center;
+        button{
+            text-align: center;
+            border-radius: 10px;
+            margin: 5px;
+            width: 70px;
+            height: 30px;
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(182, 182, 207, 0.452) ;
+            }
+            &:active{
+                transform: scale(0.9);
+            }
+        }
+    }
+}
