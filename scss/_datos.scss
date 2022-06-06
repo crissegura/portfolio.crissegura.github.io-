@@ -1,36 +1,33 @@
-.educacion{
+.datos{
     min-height: 100vh;
-    padding: 20px;
+    padding: 35px;
     h3{
         background-color: rgba(4, 4, 26, 0.473);
         font-size: 30px;
         text-align: center;
     }
-    .coderhouse{
-        h4{
-            width: 200px;
-            font-size: 28px;
-            background-color: rgba(4, 4, 26, 0.473);
-        }
-        .curso{
-            margin: 15px;
-            display: flex;
-            align-items: baseline;
-            background-color: rgba(4, 4, 26, 0.473);
-            border-radius: 10px;
-            border: solid 1px rgba(255, 255, 255, 0.123);
-            h5{
-                padding: 20px;
-                width: 320px;
-                font-size: 25px;
+    .contenedor{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-items: center;
+        div{
+            img{
+                width: 340px;
+                height: 340px;
+                border-radius: 100%;
             }
-            p{
-                font-size: 22px;
-                padding: 20px;
+        }
+        .info{
+            display: block;
+            h4{
+                text-align: center;
+                font-size: 25px;
+                background-color: rgba(4, 4, 26, 0.473);
             }
         }
     }
-    .botoneseducacion{
+    .botonesdatos{
         display: flex;
         justify-content: center;
         margin: 30px;
@@ -56,3 +53,5 @@
         }
     }
 }
+
+

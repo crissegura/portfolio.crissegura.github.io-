@@ -12,7 +12,11 @@ p {
   color: white;
 }
 
-.body div {
+.body .inicio {
+  min-height: 100vh;
+}
+
+.body .inicio div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,19 +25,25 @@ p {
           justify-content: center;
 }
 
-.body div img {
-  margin-top: 25px;
-  width: 240px;
-  height: 240px;
+.body .inicio div img {
+  border: solid 1px rgba(255, 255, 255, 0.637);
+  margin-top: 20px;
+  width: 300px;
+  height: 290px;
   border-radius: 100%;
 }
 
-.body h1 {
-  font-size: 25px;
+.body .inicio h1 {
+  font-size: 30px;
   text-align: center;
 }
 
-.body .botones {
+.body .inicio h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.body .inicio .botones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,89 +52,180 @@ p {
           justify-content: center;
 }
 
-.body .botones div {
+.body .inicio .botones div {
   display: block;
 }
 
-.body .botones div a {
-  font-size: 20px;
+.body .inicio .botones div a {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
   text-align: center;
   border-radius: 10px;
   margin: 10px;
-  width: 170px;
+  width: 300px;
   color: white;
   padding: 5px;
   text-decoration: none;
   display: block;
   background-color: rgba(4, 4, 26, 0.473);
+  border: solid 1px rgba(255, 255, 255, 0.123);
+  cursor: pointer;
 }
 
-@media (min-width: 992px) {
-  .body div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .body div img {
-    margin-top: 25px;
-    width: 340px;
-    height: 340px;
-    border-radius: 100%;
-  }
-  .body h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .body .botones {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .body .botones div {
-    display: block;
-  }
-  .body .botones div a {
-    font-size: 25px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 10px;
-    width: 200px;
-    color: white;
-    padding: 5px;
-    text-decoration: none;
-    display: block;
-    background-color: rgba(4, 4, 26, 0.473);
-  }
-  .body .botones div a:hover {
-    background-color: rgba(63, 63, 94, 0.322);
-  }
+.body .inicio .botones div a:hover {
+  background-color: rgba(63, 63, 94, 0.322);
 }
 
-.datospersonales h3 {
+.body .inicio .botones div a:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.datos {
+  min-height: 100vh;
+  padding: 35px;
+}
+
+.datos h3 {
+  background-color: rgba(4, 4, 26, 0.473);
+  font-size: 30px;
+  text-align: center;
+}
+
+.datos .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  align-items: center;
+}
+
+.datos .contenedor div img {
+  width: 340px;
+  height: 340px;
+  border-radius: 100%;
+}
+
+.datos .contenedor .info {
+  display: block;
+}
+
+.datos .contenedor .info h4 {
+  text-align: center;
   font-size: 25px;
-  text-decoration: underline;
-  text-align: center;
-  margin: 10px;
+  background-color: rgba(4, 4, 26, 0.473);
 }
 
-.datospersonales h4 {
-  text-align: center;
-  font-size: 20px;
+.datos .botonesdatos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px;
 }
 
-.educacion h2 {
-  text-align: center;
-  margin: 10px;
+.datos .botonesdatos a {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 25px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  background-color: rgba(4, 4, 26, 0.473);
+  border: solid 1px rgba(255, 255, 255, 0.123);
+  cursor: pointer;
+}
+
+.datos .botonesdatos a:hover {
+  background-color: rgba(63, 63, 94, 0.322);
+}
+
+.datos .botonesdatos a:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.educacion {
+  min-height: 100vh;
+  padding: 20px;
 }
 
 .educacion h3 {
-  margin: 10px;
+  background-color: rgba(4, 4, 26, 0.473);
+  font-size: 30px;
+  text-align: center;
+}
+
+.educacion .coderhouse h4 {
+  width: 200px;
+  font-size: 28px;
+  background-color: rgba(4, 4, 26, 0.473);
+}
+
+.educacion .coderhouse .curso {
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background-color: rgba(4, 4, 26, 0.473);
+  border-radius: 10px;
+  border: solid 1px rgba(255, 255, 255, 0.123);
+}
+
+.educacion .coderhouse .curso h5 {
+  padding: 20px;
+  width: 320px;
+  font-size: 25px;
+}
+
+.educacion .coderhouse .curso p {
   font-size: 22px;
+  padding: 20px;
+}
+
+.educacion .botoneseducacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px;
+}
+
+.educacion .botoneseducacion a {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  background-color: rgba(4, 4, 26, 0.473);
+  border: solid 1px rgba(255, 255, 255, 0.123);
+  cursor: pointer;
+}
+
+.educacion .botoneseducacion a:hover {
+  background-color: rgba(63, 63, 94, 0.322);
+}
+
+.educacion .botoneseducacion a:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
