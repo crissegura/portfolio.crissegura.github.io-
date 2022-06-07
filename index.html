@@ -86,12 +86,18 @@
                 <label for="textarea">Motivo</label>
                 <textarea name="textarea"></textarea required>
                 <div class="enviar">
-                    <button>Enviar</button>
+                    <button id="enviarformulario">Enviar</button>
                 </div>
                 <input type="hidden" name="_next" value="https://crissegura.github.io/portfolio.crissegura.github.io-/#inicio">
                 <input type="hidden" name="_captcha" value="false">
             </form>
         </section>
     </main>
+    <script>
+        var enviar = document.querySelector ('#enviarformulario');
+        enviar.addEventListener('click', function(){
+        alert('Mensaje enviado correctamente');
+        })
+    </script>
 </body>
 </html>
