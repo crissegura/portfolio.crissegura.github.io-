@@ -12,6 +12,10 @@ p {
   color: white;
 }
 
+.body .inicio {
+  min-height: 90vh;
+}
+
 .body .inicio div {
   display: -webkit-box;
   display: -ms-flexbox;
