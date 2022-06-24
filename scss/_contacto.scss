@@ -1,18 +1,16 @@
 .contacto{
+    background-color: rgba(41, 38, 38, 0.726);
     padding: 10px;
+    border-radius: 10px;
     h3{
         font-size: 25px;
         text-align: center;
-        background-color: rgba(4, 4, 26, 0.212);
+        text-decoration: underline;
     }
     .contactame{
         h4{
         text-align: center;
         font-size: 22px;
-        a{
-            text-decoration: none;
-            color: white;
-        }
         }
     }
     form{
@@ -22,6 +20,7 @@
             font-size: 22px;
         }
         label{
+            padding: 10px;
             display: block;
             color: white;
             font-size: 20px;

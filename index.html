@@ -9,78 +9,19 @@
 </head>
 <body class="body">
     <header>
-        
     </header>
     <main>
-        <section class="inicio" id="inicio">
-            <div>
-                <img src="./assets/imagenes/CristianSegura.jpeg" alt="Cristian Segura">
-            </div>    
-            <h1>Hola, soy Cristian Segura.</h1>
-            <h2> Web Developer</h2>
-            <div class="botones">    
-                <div>
-                    <a href="#datos">Datos personales</a>
-                    <a href="#educacion">Educación</a>
-                    <a href="#trabajos">Trabajos</a>
-                    <a href="#contacto">Contacto</a>
-        </section>
-        <section class="datos" id="datos">
-            <h3>Datos personales:</h3>
-            <div class="vistacel">
-                <img src="./assets/imagenes/CristianSegura.jpeg" alt="">
-            </div>
-            <div class="contenedor">
-                <div class="info">
-                    <h4>Nombres y apellido: Cristian Emanuel Segura</h4>
-                    <h4>Fecha de nacimiento: 25/04/2000 22 años</h4>
-                    <h4>Documento nacional de identidad: 42.622.177</h4>
-                    <h4>Cuit: 20-42622177-3</h4>
-                    <h4>Número de teléfono: 1150622071</h4>
-                    <h4>Domicilio: Guardia Nacional 1750, Banfield, Buenos Aires.</h4>  
-                </div>
-                <div>
-                    <img src="./assets/imagenes/CristianSegura.jpeg" alt="">
-                </div>
-            </div>
-            <div class="botonesdatos">
-                <a href="#inicio">Volver al inicio</a>
-                <a href="#educacion">Educación</a>
-            </div>
-        </section>
-        <section class="educacion" id="educacion">
-            <h3>Educación:</h3>
-            <div class="coderhouse">
-                <h4>Coderhouse</h4>
-                <div class="curso">
-                    <h5>Desarrollo Web</h5>
-                    <p>Curso en el que adquirí solidos conocimientos de HTML y CSS, SASS y GIT. También aprendi a utilizar librerias como Bootstrap, y a utilizar GitHub. <br> El objetivo del curso fue lograr una página web totalmente responsive, que se adapte sin problemas a la vista celular, de tablets y pc. Estructurando todo su contenido en HTML y dandole estilo en SASS y CSS. <br> Nota del proyecto final: 10 (diez)</p>
-                </div>
-                <div class="curso">
-                    <h5>JavaScript</h5>
-                    <p>Curso en el que adquirí solidos conocimientos de HTML y CSS, SASS y GIT. También aprendi a utilizar librerias como Bootstrap, y a utilizar GitHub. <br> El objetivo del curso fue lograr una página web totalmente responsive, que se adapte sin problemas a la vista celular, de tablets y pc. Estructurando todo su contenido en HTML y dandole estilo en SASS y CSS. <br> Nota del proyecto final: 10 (diez)</p>
-                </div>
-                <div class="curso">
-                    <h5>Python</h5>
-                    <p>Curso en el que adquirí solidos conocimientos de HTML y CSS, SASS y GIT. También aprendi a utilizar librerias como Bootstrap, y a utilizar GitHub. <br> El objetivo del curso fue lograr una página web totalmente responsive, que se adapte sin problemas a la vista celular, de tablets y pc. Estructurando todo su contenido en HTML y dandole estilo en SASS y CSS. <br> Nota del proyecto final: 10 (diez)</p>
-                </div>
-            </div>
-            <div class="botoneseducacion">
-                <a href="#datos">Datos personales</a>
-                <a href="#contacto">contacto</a>
-            </div>
-        </section>
         <section class="contacto" id="contacto">
-            <h3>Contacto:</h3>
+            <h3>Cristian Segura</h3>
             <div class="contactame">
-                <h4>Correo electrónico: crisemanuelsegura@gmail.com</h4>
-                <h4>LinkedIn: <a href="https://www.linkedin.com/in/cristian-emanuel-segura-83717b151/" target="_white"><i>Cristian Segura</i></a></h4>
-                <h4>Número de teléfono: 1150622071</h4>
+                <h4>Contacto: crisemanuelsegura@gmail.com</h4>
             </div>
             <form action="https://formsubmit.co/crisemanuelsegura@gmail.com" method="POST">
                 <h5>Dejame tus datos y me comunico con vos:</h5>
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" placeholder="Nombre" required>
+                <label for="Whatsapp">Whatsapp (opcional)</label>
+                <input type="number" name="Whatsapp" placeholder="1512345678">
                 <label for="email">Email</label>
                 <input type="email" name="email" placeholder="tuemail@gmail.com" required>
                 <label for="textarea">Motivo</label>
@@ -93,11 +34,6 @@
             </form>
         </section>
     </main>
-    <script>
-        var enviar = document.querySelector ('#enviarformulario');
-        enviar.addEventListener('click', function(){
-        alert('Mensaje enviado correctamente');
-        })
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>
