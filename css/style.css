@@ -1,6 +1,8 @@
+@charset "UTF-8";
 .body {
-  background-image: url(../assets/imagenes/imgbackground.jpg);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.932))), url(../assets/imagenes/backgorund.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.932)), url(../assets/imagenes/backgorund.jpg);
+  font-family: 'Kaisei Opti', serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,57 +13,15 @@ p {
   color: white;
 }
 
-.contacto {
-  background-color: rgba(41, 38, 38, 0.726);
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.contacto h3 {
-  font-size: 25px;
+.inicio h1 {
   text-align: center;
-  text-decoration: underline;
 }
 
-.contacto .contactame h4 {
-  text-align: center;
-  font-size: 22px;
+.pantalla1 {
+  min-height: 90vh;
 }
 
-.contacto form {
-  text-align: center;
-  display: block;
-}
-
-.contacto form h5 {
-  font-size: 22px;
-}
-
-.contacto form label {
-  padding: 10px;
-  display: block;
-  color: white;
-  font-size: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.contacto form input {
-  border-radius: 5px;
-  width: 150px;
-  height: 25px;
-}
-
-.contacto form textarea {
-  border-radius: 10px;
-  width: 300px;
-  min-width: 300px;
-  max-width: 300px;
-  height: 50px;
-  min-height: 50px;
-  max-height: 50px;
-}
-
-.contacto .enviar {
+.pantalla1 .imgMe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,85 +30,216 @@ p {
           justify-content: center;
 }
 
-.contacto .enviar button {
-  text-align: center;
-  border-radius: 10px;
-  margin: 5px;
-  width: 70px;
-  height: 30px;
+.pantalla1 .imgMe .imgCris {
+  width: 300px;
+  border-radius: 30px;
 }
 
-@media (min-width: 992px) {
-  .contacto {
-    min-height: 100vh;
-    padding: 10px;
-  }
-  .contacto h3 {
-    font-size: 30px;
-    text-align: center;
-    background-color: rgba(4, 4, 26, 0.212);
-  }
-  .contacto .contactame h4 {
-    text-align: center;
-    font-size: 25px;
-  }
-  .contacto .contactame h4 a {
-    text-decoration: none;
-    color: white;
-  }
-  .contacto .contactame h4 a:hover {
-    color: #cf9f9f;
-    -webkit-transition: 3s;
-    transition: 3s;
-  }
-  .contacto form {
-    text-align: center;
-    display: block;
-  }
-  .contacto form h5 {
-    font-size: 25px;
-  }
-  .contacto form label {
-    display: block;
-    color: white;
-    font-size: 22px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  .contacto form input {
-    border-radius: 5px;
-    width: 200px;
-    height: 30px;
-  }
-  .contacto form textarea {
-    border-radius: 10px;
-    width: 300px;
-    min-width: 300px;
-    max-width: 300px;
-    height: 50px;
-    min-height: 50px;
-    max-height: 50px;
-  }
-  .contacto .enviar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .contacto .enviar button {
-    text-align: center;
-    border-radius: 10px;
-    margin: 5px;
-    width: 70px;
-    height: 30px;
-    cursor: pointer;
-  }
-  .contacto .enviar button:hover {
-    background-color: rgba(182, 182, 207, 0.452);
-  }
-  .contacto .enviar button:active {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
+.pantalla1 .buttons {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pantalla1 .buttons a {
+  margin: 5px;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.pantalla1 .buttons a:hover {
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgba(95, 158, 160, 0.144);
+}
+
+.proyectos {
+  padding: 10px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.proyectos .contenedor {
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.788);
+  height: 380px;
+}
+
+.proyectos .contenedor:hover {
+  background-color: rgba(128, 128, 128, 0.116);
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.proyectos .contenedor h3 {
+  text-align: center;
+}
+
+.proyectos .contenedor .contImg img {
+  width: 300px;
+  height: 250px;
+}
+
+.proyectos .contenedor .visitar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.proyectos .contenedor .visitar a {
+  color: white;
+  text-decoration: none;
+}
+
+.proyectos .contenedor .visitar a:hover {
+  text-decoration: underline;
+}
+
+.proyectos .contenedor .visitar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tecno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tecno .tecnologías {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tecno .tecnologías .tech {
+  margin: 10px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  -webkit-box-shadow: 4px 3px 17px -1px rgba(124, 123, 123, 0.397);
+          box-shadow: 4px 3px 17px -1px rgba(124, 123, 123, 0.397);
+}
+
+.contacto {
+  margin-top: 50px;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacto .infoContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.contacto .infoContacto h3 {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.contacto .infoContacto p {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.contacto .infoContacto a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.contacto .infoContacto2 h3 {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.contacto .infoContacto2 form {
+  text-align: center;
+}
+
+.contacto .infoContacto2 form label {
+  color: white;
+}
+
+.contacto .infoContacto2 form input {
+  width: 260px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.contacto .infoContacto2 form textarea {
+  border-radius: 10px;
+  min-width: 260px;
+  max-width: 260px;
+  min-height: 30px;
+  max-height: 30px;
+}
+
+.contacto .infoContacto2 form #enviar {
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  width: 100px;
+  height: 30px;
+  background-color: rgba(53, 165, 53, 0.5);
+}
+
+.contacto .infoContacto2 form #enviar:hover {
+  background-color: rgba(53, 165, 53, 0.932);
+}
+
+footer {
+  text-align: center;
 }
